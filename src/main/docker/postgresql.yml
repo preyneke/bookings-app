@@ -1,0 +1,11 @@
+version: '2'
+services:
+    bookingsapp-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/BookingsApp/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=BookingsApp
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
